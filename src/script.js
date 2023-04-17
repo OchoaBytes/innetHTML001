@@ -1,5 +1,5 @@
 window.onload = function () {
-  document.getElementById("demo").innerHTML = 5 + 6;
+  document.getElementById("demo").innerHTML = 5 + 1;
   // document.write("NUNCA usar documento.write DESPUES que el documento ha terminado de cargar. Ya que esto eliminara y sobreescribirá todo el contenido previo del documento.");
 };
 

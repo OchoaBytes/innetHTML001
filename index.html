@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logojs.ico" type="image/x-icon" />
+    <script src="src/script.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Propiedad innerHTML</title>
+  </head>
+
+  <body>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph</p>
+
+    <p id="demo"></p>
+
+    <button type="button" onclick="miFuncion()">Try it</button>
+
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <p id="resultado4"></p>
+
+    <br /><br />
+
+    <script>
+      document.write(`Aqui podemos tranquilamente usar un <b>document.write</b> sin temor a que se nos 'deshaga' el documento. 
+      Ya que en este momento aun no se ha terminado de procesar por completo el HTML. 
+      </br>
+      <p>Sin embargo, dentro de un archivo "script.js" ya no podemos usar <b>document.write</b> porque llegado a ese punto, el HTML
+      ya ha terminado de cargar, y lo que haria nuestro <b>document.write</b> seria reescribir un nuevo HTML</p>
+      
+      </br></br>
+      <span>
+        Notese que en este <b>document.write</b> estoy usando una tilde inversa \` para introducir todo el texto dentro. </br>
+        Usar esta \` comilla inversa \`  me permite poder escribir texto simple, "comillas dobles", 'comillas simples', y codigo HTML
+        sin romper el resto del codigo.
+
+      <span>
+      `);
+    </script>
+  </body>
+</html>
